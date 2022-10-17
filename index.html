@@ -18,8 +18,8 @@
 
 <body>
 
-    <header class="container-fluid">
-        <div class="container-lg bg-dark">
+    <header class="container-fluid d-flex  bg-dark">
+        <div class="container-fluid text-end">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-facebook text-white" viewBox="0 0 16 16">
                 <path
@@ -32,14 +32,53 @@
             </svg>
             <a class="navbar-brand text-white" href="#">English</a>
             <a class="navbar-brand text-white" href="#">My Page</a>
-            <a class=" navbar-brand navbar-brand text-white" href="#">Logout</a>
+            <a class=" navbar-brand navbar-brand text-white me-4" href="#">Logout</a>
 
         </div>
     </header>
 
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-expand-md" id="navbar">
+        <div class="mobile-nav container-xxl">
+            <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-intersect" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z" />
+                </svg>
+                Comedy Central
+            </a>
 
+            <buttton class="btn navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </buttton>
 
+            <div class="navbar-collapse justify-content-center align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Show</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sponsor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#" class="btn btn-secondary">Campaign</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
 
 
     </nav>
@@ -55,7 +94,7 @@
                 laughter taking place in November, in South Africa.
             </p>
             <h2 class="text-start text-uppercase">
-                2022.11.25(fri) ~ 26(sat)
+                2022.11.25 (fri) ~ 26 (sat)
             </h2>
             <p class="text-start">
                 &#64; Riverside Hotel in Durban North, South Africa
@@ -106,7 +145,7 @@
         </section>
     </main>
     <footer class="bg-white">
-        <div class="partner bg-secondary" id="partner">
+        <div class="partner bg-secondary container-fluid" id="partner">
             <div class="heading-partner">
                 <h1 class="text-secondary text-center text-white">Partner</h1>
                 <p class="text-center">
@@ -164,14 +203,8 @@
             <div class="col-6">
                 2022 Creative Mic Networks Some Rights Reserved
             </div>
-
         </div>
-
-
     </footer>
-
-
-
 </body>
 
 </html>

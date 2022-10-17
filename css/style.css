@@ -13,6 +13,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: lato, sans-serif;
+}
+
 .mobile-menu {
     /* display: flex; */
 }
@@ -35,11 +39,11 @@ html {
     background: red;
 }
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-.hamburger-menu {
-    display: none;
-}
+    .hamburger-menu {
+        display: none;
+    }
 
 
 } 

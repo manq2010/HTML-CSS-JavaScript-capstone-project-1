@@ -22,6 +22,7 @@ const cardModalMenu = `
     </svg> -->
 
     <button type="button" class="btn-close"></button>
+    
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
             <a class="nav-link active" href="#">Home</a>
@@ -194,7 +195,7 @@ moreSpeaker.addEventListener('click', () => {
     speakerContainer.insertAdjacentHTML('afterbegin', moreCardSpeaker);
 
     moreSpeaker.style.display = 'none';
-    
+
 
 });
 
