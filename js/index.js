@@ -81,40 +81,45 @@ const speakerCard = [
     {
         id: 0,
         name: 'David Kau',
-        image: '',
+        image: 'david-kau.jpg',
         role: 'Comedian',
-        details: 'Join our community now and get to share the stage with avid Kau'
+        details: 'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia.',
     },
     {
         id: 1,
         name: 'Ntsudeni Ndou',
-        image: '',
+        image: 'trevor-gumbi.jpg',
         role: 'Comedian',
-        details: 'Join our community now and get to share the stage with avid Kau'
+        details: 'By developing Asia&apos;s first Internet protocol network SDN and leading Korea&apos;s first private line Internet connection in 1990, it ushered in the era of the Internet in earnest.',
     },
     {
         id: 2,
         name: 'Trevor Noah',
-        image: '',
+        image: 'trevor-noah.jpg',
         role: 'Comedian',
-        details: 'Join our community now and get to share the stage with avid Kau'
+        details: 'European integration and online youth participation in politics and democracy are major concerns, and a report has been published that will potentially affect the revision of the EU&apos;s copyright law in July.',
     },
     {
         id: 3,
         name: 'Loyiso Gala',
-        image: '',
+        image: 'loyiso-gala.jpg',
         role: 'Comedian',
-        details: 'Join our community now and get to share the stage with avid Kau'
+        details: 'Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages every month to over 100 million people, nearly half of the world&apos;s population',
     },
 ];
 
 function contentSpeakers(speaker) {
     const cards = `
     <div class="speaker-holder">
-        <img src="/assets/${speaker.image}.svg" alt="${speaker.image}" width="${20}" height="${20}">
+        <div class="speaker-img-holder">
+            <img src="/assets/${speaker.image}" alt="${speaker.image}" class="speaker-img">   
+        </div>
+        <div >
         <h3 class="speaker-title">${speaker.name}</h3>
-        <h4 class="speaker-role">${speaker.role}</h3>
+        <h4 class="speaker-role underline-role">${speaker.role}</h3>
         <p class="speaker-details">${speaker.details}</p>
+        </div>
+
    </div>
     `
     return cards;
@@ -152,6 +157,14 @@ moreSpeaker.addEventListener('click', () => {
     moreSpeaker.style.display = 'none';
 
 
+});
+
+window.addEventListener('resize', (e) => {
+
+
+ if (e.target.innerWidth > 768) {
+    // console.log(e.target.innerWidth)
+ }
 });
 
 
