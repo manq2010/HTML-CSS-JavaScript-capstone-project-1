@@ -157,9 +157,3 @@ moreSpeaker.addEventListener('click', () => {
 
   moreSpeaker.style.display = 'none';
 });
-
-window.addEventListener('resize', (e) => {
-  if (e.target.innerWidth > 768) {
-    // console.log(e.target.innerWidth)
-  }
-});

@@ -44,6 +44,12 @@ body {
   z-index: 5;
 }
 
+.mobile > .nav-item:hover {
+  border: var(--orange-color) 1px solid;
+  border-radius: 0.5rem;
+  width: 7rem;
+}
+
 .btn-close {
   display: flex;
   color: #fff;
@@ -75,10 +81,6 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
 }
-
-/* .header-container-details {
-
-} */
 
 .hero {
   background: url(/assets/img-4.jpg) no-repeat center center/ cover;
@@ -130,7 +132,7 @@ body {
   padding: 5%;
 }
 
-.comedy-program, {
+.comedy-program {
   padding: 5%;
 }
 
@@ -352,28 +354,29 @@ body {
   color: #000;
 }
 
-.card-holder:hover {
-    border: 2px #fff solid;
-}
-
-.header-container {
-    /* padding-right: 6rem; */
-}
-
 .header-container-details {
-    padding-right: 6rem;
+  padding-right: 6rem;
 }
 
 .main-nav-desktop {
-    /* margin-right: 22%; */
-    margin-right: 24rem;
-  }
+  margin-right: 24rem;
+}
 
 @media (min-width: 768px) {
-    .main-nav-desktop {
-        /* margin-right: 22%; */
-        margin-right: 24rem;
-      }
+  .card-holder {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 3fr 2fr;
+  }
+
+  .card-holder:hover {
+    border: 2px #fff solid;
+  }
+
+  .main-nav-desktop {
+    margin-right: 22.5rem;
+  }
 
   .nav-link {
     color: var(--dark-color);
@@ -383,6 +386,10 @@ body {
 
   .nav-item {
     margin-left: 7%;
+  }
+
+  .nav-item > a:hover {
+    color: var(--orange-color);
   }
 
   .header-container {
@@ -433,13 +440,6 @@ body {
     padding: 5%;
   }
 
-  .card-holder {
-    margin-top: 2.5rem;
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    grid-template-rows: 3fr 2fr;
-  }
-
   .card-holder > img {
     grid-column: 2;
     width: 5rem;
@@ -471,12 +471,10 @@ body {
 }
 
 @media (min-width: 992px) {
+  .main-nav-desktop {
+    margin-right: 24rem;
+  }
 
-    .main-nav-desktop {
-        /* margin-right: 22%; */
-        margin-right: 24rem;
-      }
-      
   .heading-m {
     font-size: 3.7rem;
   }
@@ -547,11 +545,10 @@ body {
 }
 
 @media (min-width: 1200px) {
-    
-    .main-nav-desktop {
-        /* margin-right: 22%; */
-        margin-right: 24rem;
-      }
+  .main-nav-desktop {
+    margin-right: 54rem;
+  }
+
   .nav-item {
     margin-left: 20%;
   }
