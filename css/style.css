@@ -76,6 +76,10 @@ body {
   font-weight: 400;
 }
 
+/* .header-container-details {
+
+} */
+
 .hero {
   background: url(/assets/img-4.jpg) no-repeat center center/ cover;
   padding: 1% 10%;
@@ -348,10 +352,28 @@ body {
   color: #000;
 }
 
-@media (min-width: 768px) {
-  .main-nav-desktop {
-    margin-right: 25%;
+.card-holder:hover {
+    border: 2px #fff solid;
+}
+
+.header-container {
+    /* padding-right: 6rem; */
+}
+
+.header-container-details {
+    padding-right: 6rem;
+}
+
+.main-nav-desktop {
+    /* margin-right: 22%; */
+    margin-right: 24rem;
   }
+
+@media (min-width: 768px) {
+    .main-nav-desktop {
+        /* margin-right: 22%; */
+        margin-right: 24rem;
+      }
 
   .nav-link {
     color: var(--dark-color);
@@ -449,6 +471,12 @@ body {
 }
 
 @media (min-width: 992px) {
+
+    .main-nav-desktop {
+        /* margin-right: 22%; */
+        margin-right: 24rem;
+      }
+      
   .heading-m {
     font-size: 3.7rem;
   }
@@ -519,10 +547,11 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .main-nav-desktop {
-    margin-right: 50%;
-  }
-
+    
+    .main-nav-desktop {
+        /* margin-right: 22%; */
+        margin-right: 24rem;
+      }
   .nav-item {
     margin-left: 20%;
   }
