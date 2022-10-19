@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[My Portfolio](https://manq2010.github.io/my-portfolio/)
+[My Website](https://manq2010.github.io/HTML-CSS-JavaScript-capstone-project-1/)
 
 ## Getting Started
 
