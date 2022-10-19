@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('.btn-close');
 console.log(humburger);
 const mobileMenu = document.querySelector('.main-nav');
 const mobileNav = document.querySelector('.mobile-nav');
-
+const navItem = document.querySelectorAll('.nav-item');
 
 function mobileMenuToggle() {
     mobileNav.classList.toggle('open');
@@ -16,6 +16,10 @@ function mobileMenuToggle() {
 humburger.addEventListener('click', mobileMenuToggle);
 closeBtn.addEventListener('click', mobileMenuToggle);
 
+navItem.forEach((item) => {
+    item.addEventListener('click', mobileMenuToggle);
+});
+
 // Main Program
 
 const programCard = [
@@ -23,31 +27,31 @@ const programCard = [
         id: 0,
         cardImage: 'mic-fill',
         cardName: 'Mic',
-        cardDetails: 'Upcoming comedians will get to showcase their skills',
+        cardDetails: 'Upcoming comedians will get to showcase their skills, and share the stage with the worlds renown comedians',
     },
     {
         id: 1,
         cardImage: 'egg-fried',
         cardName: 'Food',
-        cardDetails: 'A buffet menu will we available at venue',
+        cardDetails: 'A buffet menu will we available at venue, free for vvip and vip ticket holders.',
     },
     {
         id: 2,
         cardImage: 'building',
         cardName: 'Hotel',
-        cardDetails: 'Accommodation will be after the event, free for vvip ticket holders',
+        cardDetails: 'Accommodation will be after the event, free for vvip and vip ticket holders.',
     },
     {
         id: 3,
         cardImage: 'car-front-fill',
         cardName: 'Uber',
-        cardDetails: 'Transport with be avlaible a at a discount',
+        cardDetails: 'Transport with be available at a discount for all ticket holders to and from the hotel.',
     },
     {
         id: 4,
         cardImage: 'people-fill',
         cardName: 'Community',
-        cardDetails: 'You will have interestion with a wider network',
+        cardDetails: 'You will have interaction with a wider network, ranging from vvip guests to the comedians.',
     },
 ];
 
@@ -162,9 +166,9 @@ moreSpeaker.addEventListener('click', () => {
 window.addEventListener('resize', (e) => {
 
 
- if (e.target.innerWidth > 768) {
-    // console.log(e.target.innerWidth)
- }
+    if (e.target.innerWidth > 768) {
+        // console.log(e.target.innerWidth)
+    }
 });
 
 
