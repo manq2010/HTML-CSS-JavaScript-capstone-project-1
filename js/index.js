@@ -60,7 +60,7 @@ let card = '';
 function contentCard(program) {
   const cards = `
  <div class="card-holder">
- <img src="/assets/${program.cardImage}.svg" alt="${program.cardImage}" width="${40}" height="${40}">
+ <img src="./assets/${program.cardImage}.svg" alt="${program.cardImage}" width="${40}" height="${40}">
  <h3 class="card-title">${program.cardName}</h3>
  <p class="card-details">${program.cardDetails}</p>
 </div>
@@ -116,7 +116,7 @@ function contentSpeakers(speaker) {
   const cards = `
     <div class="speaker-holder">
         <div class="speaker-img-holder">
-            <img src="/assets/${speaker.image}" alt="${speaker.image}" class="speaker-img">   
+            <img src="./assets/${speaker.image}" alt="${speaker.image}" class="speaker-img">   
         </div>
         <div >
         <h3 class="speaker-title">${speaker.name}</h3>
