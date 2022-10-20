@@ -83,7 +83,7 @@ body {
 }
 
 .hero {
-  background: url(/assets/img-4.jpg) no-repeat center center/ cover;
+  background: url(./assets/img-4.jpg) no-repeat center center/ cover;
   padding: 1% 10%;
 }
 
@@ -221,7 +221,7 @@ body {
 }
 
 .event-one-holder {
-  background: url(/assets/img-4.jpg) no-repeat center center/ cover;
+  background: url(./assets/img-4.jpg) no-repeat center center/ cover;
   margin: 5%;
 }
 
@@ -232,7 +232,7 @@ body {
 }
 
 .event-two-holder {
-  background: url(/assets/img-4.jpg) no-repeat center center/ cover;
+  background: url(./assets/img-4.jpg) no-repeat center center/ cover;
   margin: 5%;
 }
 
@@ -256,7 +256,7 @@ body {
 
 .speaker-img-holder {
   place-items: center;
-  background: url(/assets/checkered.png) no-repeat;
+  background: url(./assets/checkered.png) no-repeat;
   margin: 0.5rem;
   background-size: 50% 50%;
   padding-left: 1rem;
